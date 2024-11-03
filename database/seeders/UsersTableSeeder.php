@@ -4,12 +4,15 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use Illuminate\Database\Seeder;
+use DB;
 
 class UsersTableSeeder extends Seeder
 {
     public function run()
     {
-        $users = [
+
+        DB::table('users')->insert([
+
             [
                 'id'             => 1,
                 'name'           => 'Admin',
@@ -17,9 +20,22 @@ class UsersTableSeeder extends Seeder
                 'password'       => '$2y$10$q4RcwRhxKiQgZGtdGRtZ3e/RYW983p39bZ0dlJV43I3rjm1OKPMei',
                 'remember_token' => null,
             ],
-        ];
+            [
+                'id'             => 2,
+                'name'           => 'Mark',
+                'email'          => 'mark@mark.com',
+                'password'       => '$2y$10$q4RcwRhxKiQgZGtdGRtZ3e/RYW983p39bZ0dlJV43I3rjm1OKPMei',
+                'remember_token' => null,
+            ],
+            [
+                'id'             => 3,
+                'name'           => 'Juliet',
+                'email'          => 'juliet@juliet.com',
+                'password'       => '$2y$10$q4RcwRhxKiQgZGtdGRtZ3e/RYW983p39bZ0dlJV43I3rjm1OKPMei',
+                'remember_token' => null,
+            ]
 
-        User::insert($users);
+        ]);
 
     }
 }
