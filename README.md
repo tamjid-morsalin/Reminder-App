@@ -1,8 +1,15 @@
-Clone the repository with git clone
-Copy .env.example file to .env and edit database credentials there
-Run: composer install
-Run: php artisan key:generate
-Run: php artisan migrate --seed (it has some seeded data for your testing)
-That's it: launch the main URL.
+- Prerequisite
+    - php7.4
+    - mysql 
+- Clone the repository with git clone
+- Copy .env.example file to .env and edit database credentials there
+- Create a DB in mysql as per .env
+- Run: <b>composer install</b>
+- Run: <b>php artisan key:generate</b>
+- Run: <b>php artisan migrate --seed</b> (it has some seeded data for your testing)
+- That's it: launch the main URL.
     - http://127.0.0.1:8001/login
-You can login to adminpanel with default credentials admin@admin.com - password
+- You can login to adminpanel with default credentials email:admin@admin.com - password:password
+- Run: <b>php artisan reminder:send</b> for sending mail
+- Here is the template for importcsv file
+      - <table><thead><th>title</th><th>description</th><th>start date time</th></thead><tbody><td>Eid ul fitre</td><td>description</td><td>2024-11-17 16:24:46</td></tbody></table>
