@@ -14,5 +14,5 @@
     - email:mark@mark.com - password:password
     - email:juliet@juliet.com - password:password
 - Run: <b>php artisan reminder:send</b> for sending mail
-- Here is the template for importcsv file
+- Here is the template for import csv file
       - <table><thead><th>title</th><th>description</th><th>start date time</th></thead><tbody><td>Eid ul fitre</td><td>description</td><td>2024-11-17 16:24:46</td></tbody></table>
